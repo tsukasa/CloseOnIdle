@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Close on Idle",
+  "version": "0.0.2",
+  "description": "Closes the web-browser when the user becomes idle.",
+  "homepage_url": "https://github.com/tsukasa/CloseOnIdle",
+  "icons": {
+    "64": "img/icon_64.png",
+    "128": "img/icon_128.png",
+    "256": "img/icon_256.png"
+  },
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "idle",
+    "storage"
+  ],
+  "background": {
+      "service_worker": "js/background.js"
+  }
+}
